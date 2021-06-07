@@ -48,7 +48,7 @@
         <section class="h1-btn-background">
             <div class="h1-btn container">
                 <h1 class="effective-solutions">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                <button class="button-studio" type="button" >Заказать услугу</button>
+                <button type="button" class="button-studio" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -116,9 +116,24 @@
             <div class="container">
                 <h2 class="h2-container-name">Чем мы занимаемся</h2>
                 <ul class="what-img list">
-                    <li><img src="./images/main-page-img/typingman.jpg" alt="человек печатает на клавиатуре" width="370" height="294"></li>
-                    <li><img src="./images/main-page-img/manphone.jpg" alt="человек смотрит в телефон" width="370" height="294"></li>
-                    <li><img src="./images/main-page-img/paintingonpad.jpg" alt="человек рисует на планшете" width="370" height="294"></li>
+                    <li>
+                        <div class="lara">
+                            <img src="./images/main-page-img/typingman.jpg" alt="человек печатает на клавиатуре" >
+                            <p class="khil">Десктопные приложения</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lara">
+                            <img src="./images/main-page-img/manphone.jpg" alt="человек смотрит в телефон" width="370" height="294"> 
+                            <p class="khil">Мобильные приложения</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="lara">
+                            <img src="./images/main-page-img/paintingonpad.jpg" alt="человек рисует на планшете" width="370" height="294">
+                            <p class="khil">Дизайнерские решения</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -390,5 +405,42 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="svg-modal-close-btn">
+                    <use href="./images/sprite.svg#icon-close-black"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- Вся твоя разметка, включая разметку модалки -->
+
+<!-- Ставим перед закрывающим тегом body -->
+<div class="backdrop .is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+            <svg class="svg-modal-close-btn">
+                <use href="./images/sprite.svg#icon-close-black"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+<!-- Вся твоя разметка, включая разметку модалки -->
+
+<!-- Ставим перед закрывающим тегом body -->
+<div class="backdrop" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+            <svg class="svg-modal-close-btn">
+                <use href="./images/sprite.svg#icon-close-black"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+<!-- Вся твоя разметка, включая разметку модалки -->
+
+<!-- Ставим перед закрывающим тегом body -->
+<script src="./js/modal.js"></script> 
 </body>
 </html>
